@@ -6,14 +6,14 @@
 
 import Foundation
 
-// 本のデータモデル・BookModel
-class BookModel: NSObject {
-    var name: String = ""           // 書籍名
-    var author: String = ""         // 著者名
-    var price: Int = 0              // 価格
-    var publisher: String = ""      // 出版社
-    var publishDate: String = ""    // 発行年月日
-    var ISBN: String = ""           // ISBN
-    var size: String = ""           // サイズ
-    var page: Int = 0               // ページ数
+// 本のデータモデル・Book
+struct Book {
+    let name: String
+    let author: String
+    let price: Int
+    let publisher: String
+    let publishDate: Date
+    let isbn: String
+    let size: String
+    let page: Int
 }
