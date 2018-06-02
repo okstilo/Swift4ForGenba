@@ -9,8 +9,8 @@ let array: [Int] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 // indexはインデックス、valueはインデックスの順番に格納されている中身です
 // index, valueの箇所の変数名は自由に指定することができます
-for (index, value) in array.enumerated() {
-    print("index: \(index), value:\(value)")
+for (i, value) in zip(array.indices, array) {
+    print("index: \(i), value:\(value)")
 }
 
 /*
