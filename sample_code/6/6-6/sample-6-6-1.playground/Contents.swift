@@ -14,13 +14,13 @@ for i in 0..<10 {
 // 0 1 2 3 4 5 6 7 8 9
 
 // 配列の格納数分処理を行う（※B）
-for i in 0..<array.count {
-    print(i)
+for i in array.indices {
+    print(array[i])
 }
 // 0 1 2 3 4 5 6 7 8 9
 
 // 配列の格納数分の処理を行う（※C）
-for i in array {
+array.forEach { i in
     print(i)
 }
 // 0 1 2 3 4 5 6 7 8 9

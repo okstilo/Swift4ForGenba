@@ -12,13 +12,12 @@ for i in (0..<10).reversed() {
 }
 // 9 8 7 6 5 4 3 2 1 0
 
-for i in (0..<array.count).reversed() {
-    print(i)
+for i in array.indices.reversed() {
+    print(array[i])
 }
 // 9 8 7 6 5 4 3 2 1 0
 
-
-for i in array.reversed() {
+array.reversed().forEach { i in
     print(i)
 }
 // 9 8 7 6 5 4 3 2 1 0
