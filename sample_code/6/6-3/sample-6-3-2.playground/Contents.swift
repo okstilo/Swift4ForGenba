@@ -8,14 +8,18 @@ import Foundation
 
 // 名前、かな、誕生日、出生地のパラメーターを持つ構造体・Person
 struct Person {
-    var name: String = ""
-    var furigana: String = ""
+    let name: String
+    let furigana: String
     var birthday: Date?
     var birthPlace: String?
 }
 
 // nilが入っているかどうかをチェックする一例
-let person = Person()
+let person = Person(name: "",
+                    furigana: "",
+                    birthday: nil,
+                    birthPlace: nil)
+
 if let birthday: Date = person.birthday {
     // nilではなく、birthdayの値がある場合
     print(birthday)
